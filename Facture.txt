@@ -1,0 +1,51 @@
+1  Eau Min?©rale 1.5L  2  5.3
+2  Soda  1  5.0
+3  Pizza Thon  2  15.3
+4  Caf?© Turc  1  3.0
+5  Cappuccion  2  5.6
+6  Jus d'Orange  3  6.0
+7  Eau Min?©rale 1.5L  2  5.3
+8  Soda  1  5.0
+9  Pizza Thon  2  15.3
+10  Caf?© Turc  1  3.0
+11  Cappuccion  2  5.6
+12  Jus d'Orange  3  6.0
+13  Cappuccion  2  5.6
+14  Jus d'Orange  3  6.0
+15  Jus d'Orange  3  6.0
+16  Eau Min?©rale 1.5L  2  5.3
+17  Caf?© Turc  1  3.0
+18  Caf?© Turc  1  3.0
+19  Caf?© Turc  1  3.0
+20  Caf?© Turc  1  3.0
+21  Caf?© Turc  1  3.0
+22  Caf?© Turc  1  3.0
+23  Caf?© Cappuccino  1  7.0
+24  Cake  2  10.0
+---------------------------------------------------------------------
+Total :  259.61  Eau Min?©rale 1.5L  2  5.3
+2  Soda  1  5.0
+3  Pizza Thon  2  15.3
+4  Caf?© Turc  1  3.0
+5  Cappuccion  2  5.6
+6  Jus d'Orange  3  6.0
+7  Eau Min?©rale 1.5L  2  5.3
+8  Soda  1  5.0
+9  Pizza Thon  2  15.3
+10  Caf?© Turc  1  3.0
+11  Cappuccion  2  5.6
+12  Jus d'Orange  3  6.0
+13  Cappuccion  2  5.6
+14  Jus d'Orange  3  6.0
+15  Jus d'Orange  3  6.0
+16  Eau Min?©rale 1.5L  2  5.3
+17  Caf?© Turc  1  3.0
+18  Caf?© Turc  1  3.0
+19  Caf?© Turc  1  3.0
+20  Caf?© Turc  1  3.0
+21  Caf?© Turc  1  3.0
+22  Caf?© Turc  1  3.0
+23  Caf?© Cappuccino  1  7.0
+24  Cake  2  10.0
+---------------------------------------------------------------------
+Total :  259.6

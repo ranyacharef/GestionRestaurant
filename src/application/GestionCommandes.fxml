@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1532.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CommandesController">
+   <children>
+      <Pane fx:id="tabpangeneral" layoutY="457.0" prefHeight="327.0" prefWidth="1245.0" />
+      <Pane layoutX="451.0" layoutY="14.0" prefHeight="255.0" prefWidth="617.0" style="-fx-background-color: #D1F2EB;">
+         <children>
+            <Label layoutX="9.0" layoutY="9.0" prefHeight="50.0" prefWidth="152.0" text="Total NET" textFill="#012f46">
+               <font>
+                  <Font size="34.0" />
+               </font></Label>
+            <Label fx:id="dateEcran" layoutX="14.0" layoutY="203.0" prefHeight="38.0" prefWidth="326.0" style="-fx-background-color: white;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Light Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="379.0" layoutY="203.0" prefHeight="37.0" prefWidth="208.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Calibri Light" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalnet" layoutX="14.0" layoutY="59.0" prefHeight="126.0" prefWidth="573.0" style="-fx-background-color: white;" textFill="#448aaf">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+          
+         </children></Pane>
+      <Button fx:id="serveur3Clicked" layoutX="766.0" layoutY="285.0" mnemonicParsing="false" onAction="#serveur3Clicked" prefHeight="75.0" prefWidth="140.0" />
+      <Button fx:id="serveur1Clicked" layoutX="451.0" layoutY="285.0" mnemonicParsing="false" onAction="#serveur1Clicked" prefHeight="75.0" prefWidth="140.0" />
+      <Button fx:id="serveur4Clicked" layoutX="926.0" layoutY="285.0" mnemonicParsing="false" onAction="#serveur4Clicked" prefHeight="75.0" prefWidth="140.0" />
+      <Button fx:id="serveur2Clicked" layoutX="610.0" layoutY="285.0" mnemonicParsing="false" onAction="#serveur2Clicked" prefHeight="75.0" prefWidth="140.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Pane layoutX="1065.0" layoutY="3.0" prefHeight="383.0" prefWidth="466.0">
+         <children>
+            <Button fx:id="quatre" layoutX="14.0" layoutY="106.0" mnemonicParsing="false" onAction="#quatre" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="4" textFill="#ffffff">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="cinq" layoutX="163.0" layoutY="106.0" mnemonicParsing="false" onAction="#cinq" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="six" layoutX="312.0" layoutY="106.0" mnemonicParsing="false" onAction="#six" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="6" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="un" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#un" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="zero" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#zero" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#00000070" />
+               </effect></Button>
+            <Button fx:id="deux" layoutX="163.0" layoutY="195.0" mnemonicParsing="false" onAction="#deux" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="trois" layoutX="312.0" layoutY="195.0" mnemonicParsing="false" onAction="#trois" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="virgule" layoutX="163.0" layoutY="282.0" mnemonicParsing="false" onAction="#virgule" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="," textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect>
+            </Button>
+            <Button fx:id="okButton" layoutX="312.0" layoutY="282.0" mnemonicParsing="false" onAction="#okButton" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="sept" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#sept" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="7" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="huit" layoutX="163.0" layoutY="14.0" mnemonicParsing="false" onAction="#huit" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="8" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="neuf" layoutX="312.0" layoutY="14.0" mnemonicParsing="false" onAction="#neuf" prefHeight="75.0" prefWidth="140.0" style="-fx-background-color: #C39BD3;" text="9" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+         </children>
+      </Pane>
+      <TabPane layoutY="389.0" prefHeight="398.0" prefWidth="1292.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cafés">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="1516.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutY="5.0" prefHeight="365.0" prefWidth="1286.0">
+                           <children>
+                              <Button layoutX="11.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Express">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button fx:id="cafe" layoutX="11.0" mnemonicParsing="false" onAction="#commanderCafe" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Turc" textAlignment="RIGHT">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Express Lavazza">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Ice Coffe">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Direct">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button fx:id="cappucino" layoutX="153.0" mnemonicParsing="false" onAction="#commanderCappuccion" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Cappuccino">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Cappuccin Lavazza">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Chocolat Chaud">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Cappuccin">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Moccha">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Direct Lavazza">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Chocolat Viennoise">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Américaine">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Cappuccino Lavazza">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D1F2EB;" text="Café Latte">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Boissons">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="900.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="302.0" prefWidth="766.0">
+                           <children>
+                               <Button layoutX="11.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Jus de Banane">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button fx:id="jusOrange" layoutX="11.0" mnemonicParsing="false" onAction="#commanderJusOrange" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Jus d'Orange">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #ABB2B9;" text="Soda">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Milkshake Oreo">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Citronnade">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Cocktail">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #ABB2B9;" text="Shark">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;">
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Citronnade Amande">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #ABB2B9;" text="Sprit">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Milkshake">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;" text="Jus de Fraise">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #ABB2B9;" text="Eau Minérale 1.5L">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0">
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                        <Button layoutX="722.0" layoutY="148.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                        <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #F1C40F;">
+                           <effect>
+                              <InnerShadow color="#0000006b" />
+                           </effect>
+                        </Button>
+                        <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #ABB2B9;" text="Eau Minérale 0.5L">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow color="#0000006b" />
+                           </effect>
+                        </Button>
+                        <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Gateaux et Tartes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="900.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="302.0" prefWidth="766.0">
+                           <children>
+                               <Button layoutX="11.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Tarte Citron">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button fx:id="tartefraise" layoutX="11.0" mnemonicParsing="false" onAction="#commanderTarteFraise" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Tarte Fraise">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #AED6F1;" text="Crepe Chocolat">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Opera">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Red Velvet">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Fondant Pistache">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #AED6F1;" text="Crepe chocoBanane">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Russe Noisette">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Fondant Chocolat">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #AED6F1;" text="Pancake ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Mousse Chocolat">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Russe Pistache">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D7BDE2;" text="Fondant Noisette">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Sandwichs">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="384.0" prefWidth="1764.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="381.0" prefWidth="1783.0">
+                           <children>
+                              <Button layoutX="11.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Mlawi Chawarma">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="11.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Mlawi Esclope">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Mlawi Thon">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Baguette Farcie">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Tacos Chawarma">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #D0ECE7;" text="Tacos Escalope">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="pizzathon" onSelectionChanged="#commanderPizzaThon" text="Pizza">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="900.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="302.0" prefWidth="766.0">
+                           <children>
+                               <Button layoutX="11.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #FFA07A;" text="Pizza Vegetarienne">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button fx:id="pizzaThon" layoutX="11.0" mnemonicParsing="false" onAction="#commanderPizzaThon" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #FFA07A;" text="Pizza Thon">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" style="-fx-background-color: #FFA07A;" text="Pizza Escalope ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <effect>
+                                    <InnerShadow color="#0000006b" />
+                                 </effect></Button>
+                              <Button layoutX="153.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Plats">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="900.0" stylesheets="@../TableListeCommande.css">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="1.0" prefHeight="302.0" prefWidth="766.0">
+                           <children>
+                             <Button layoutX="11.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="Boeuf Grillé ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button layoutX="11.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="Escalope Grillé">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button layoutX="295.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="Pasta Bolognaise">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button layoutX="153.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="Fruits Mer">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button layoutX="153.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="11.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="295.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="153.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="437.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="579.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="721.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="864.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="74.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="147.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1006.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="1.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="72.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="146.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="218.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                              <Button layoutX="1148.0" layoutY="290.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Pane layoutX="1298.0" layoutY="389.0" prefHeight="398.0" prefWidth="230.0">
+         <children>
+            <Button fx:id="valider" layoutX="6.0" mnemonicParsing="false" onAction="#validerCommande" prefHeight="57.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Valider" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="annuler" layoutX="6.0" layoutY="60.0" mnemonicParsing="false" onAction="#annulerCommande" onMouseClicked="#annulerCommande" prefHeight="50.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Annuler">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+                </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect>
+            </Button>
+            <Button fx:id="supprimerLigne" layoutX="6.0" layoutY="114.0" mnemonicParsing="false" onAction="#supprimerLigne" prefHeight="54.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Supprimer ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="imprimer" layoutX="6.0" layoutY="172.0" mnemonicParsing="false" onAction="#imprimerFacture" prefHeight="50.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Imprimer">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="payer" layoutX="6.0" layoutY="226.0" mnemonicParsing="false" onAction="#payer" prefHeight="60.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Payer">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="ouvrirt" layoutX="6.0" layoutY="288.0" mnemonicParsing="false" onAction="#ouvrirTiroir" prefHeight="57.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Ouvrir Tiroir">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <Button fx:id="total" layoutX="6.0" layoutY="348.0" mnemonicParsing="false" onAction="#afficherTotalFacture" prefHeight="50.0" prefWidth="217.0" style="-fx-background-color: #F8F9F9;" text="Total">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#0000006b" />
+               </effect></Button>
+            <ImageView fitHeight="40.0" fitWidth="51.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/png-clipart-logo-graphics-product-organization-company-validation-icon-company-logo.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="17.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/kisspng-computer-icons-christian-cross-icon-design-clip-ar-5afc2de4bc8555.6906750415264762607722.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="44.0" layoutX="17.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/delete-icon-white-background-illustration-107736142.jpg" />
+               </image>
+               <effect>
+                  <Glow level="0.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="17.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/png-clipart-dell-printer-computer-icons-printing-printer-computer-network-angle.png" />
+               </image></ImageView>
+            <ImageView fitHeight="46.0" fitWidth="51.0" layoutX="17.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/512570-icone-de-glyphe-de-paiement-noir-gratuit-vectoriel.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="17.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/ic-ne-de-caisse-enregistreuse-74259039.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="17.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IconeApplication/VisualEditor_-_Icon_-_Equation.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="commandeListe" layoutX="1.0" layoutY="-1.0" prefHeight="390.0" prefWidth="436.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="49.59997636079788" text="#" />
+          <TableColumn fx:id="libelleProduit" prefWidth="218.40003204345703" text="Commande" />
+            <TableColumn fx:id="prix" prefWidth="90.39996337890625" text="prix" />
+            <TableColumn fx:id="qty" prefWidth="74.0" text="Qty" />
+        </columns>
+      </TableView>
+      <Label fx:id="serveur1" layoutX="456.0" layoutY="299.0" prefHeight="46.0" prefWidth="130.0" textFill="#2874a6">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="serveur2" layoutX="615.0" layoutY="299.0" prefHeight="46.0" prefWidth="130.0" textFill="#2874a6">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="serveur3" layoutX="771.0" layoutY="299.0" prefHeight="46.0" prefWidth="130.0" textFill="#2874a6">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="serveur4" layoutX="931.0" layoutY="299.0" prefHeight="46.0" prefWidth="130.0" textFill="#2874a6">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+   </children>
+</Pane>
